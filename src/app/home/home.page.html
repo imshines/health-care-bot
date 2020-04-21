@@ -1,21 +1,60 @@
-<!-- <ion-header [translucent]="true">
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title class="text-center">
-      Blank
+      <img src="../../assets/icon/logo.png" alt="" width="120px">
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <h3 class="text-center">Welcome, <b>User Name</b></h3>
 
-</ion-content> -->
+  <hr>
 
-<header class="head">
+  <ion-item button (click)="buttonClick()" detail lines="none"  [routerLink]="['/chat']">
+    <ion-label>
+      Chat For Assistance
+    </ion-label>
+    <ion-icon name="chatbubble-ellipses-outline" slot="start"></ion-icon> 
+  </ion-item>
+  <ion-item button (click)="buttonClick()" detail lines="none">
+    <ion-label>
+      Nearby Hospitals
+    </ion-label>
+    <ion-icon name="navigate-circle-outline" slot="start"></ion-icon> 
+  </ion-item>
+  <ion-item button (click)="buttonClick()" detail lines="none">
+    <ion-label>
+      Nearby Pharmacy 
+    </ion-label>
+    <ion-icon name="compass-outline" slot="start"></ion-icon>
+  </ion-item>
+
+  <hr>
+
+  <ion-item button (click)="buttonClick()" detail lines="none">
+    <ion-label >
+      Profile
+    </ion-label>
+    <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+  </ion-item>
+  <ion-item button (click)="buttonClick()" detail lines="none" [routerLink] = "['/settings']">
+    <ion-label>
+      Settings
+    </ion-label>
+    <ion-icon name="settings-outline" slot="start"></ion-icon>
+  </ion-item>
+  <ion-item button (click)="buttonClick()" detail lines="none">
+    <ion-label>
+      Help
+    </ion-label>
+    <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+  </ion-item>
+
+</ion-content>
+
+
+<!-- <header class="head">
   <p style="font-size: calc(20px * 2); margin-left: 20px; cursor: pointer;">=</p>
   <h1>HealthBot</h1>
 </header>
@@ -43,4 +82,6 @@
 <footer class="foot">
   <input type="text" class="message-input" placeholder="Enter Message"/>
   <button class="send-button" id="btn">Send</button>
-</footer>
+</footer> -->
+
+

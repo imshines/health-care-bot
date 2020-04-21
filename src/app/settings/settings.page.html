@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="text-center">
+      <img src="../../assets/icon/logo.png" alt="" width="120px">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <hr>
+
+  <ion-item button (click)="buttonClick()" lines="none">
+    <ion-label>
+      My Data
+    </ion-label>
+  </ion-item>
+  <ion-item button (click)="buttonClick()" lines="none">
+    <ion-label>
+      Privacy Policy
+    </ion-label>
+  </ion-item>
+  <ion-item button (click)="buttonClick()" lines="none" [routerLink]="['/login']">
+    <ion-label>
+      Logout 
+    </ion-label>
+  </ion-item>
+
+  <hr>
+
+</ion-content>
