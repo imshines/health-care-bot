@@ -1,6 +1,6 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
+    <ion-title class="text-center">
       Blank
     </ion-title>
   </ion-toolbar>
@@ -13,8 +13,34 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+</ion-content> -->
+
+<header class="head">
+  <p style="font-size: calc(20px * 2); margin-left: 20px; cursor: pointer;">=</p>
+  <h1>HealthBot</h1>
+</header>
+
+<section class="messages">
+  <div class="chat-message">
+      <div class="circle"></div>
+      <p class="message-text">Hi I'm bot, How can I help you?</p>
   </div>
-</ion-content>
+  <div class="chat-message-reverse">
+      <div class="circle"></div>
+      <p class="message-text-sender">I'm having a headache</p>
+  </div>
+  <div class="chat-message">
+      <div class="circle"></div>
+      <p class="message-text">How long do you headache?</p>
+  </div>
+  <div class="chat-message-reverse">
+      <div class="circle"></div>
+      <p class="message-text-sender">For about a day.</p>
+  </div>
+  
+</section>
+
+<footer class="foot">
+  <input type="text" class="message-input" placeholder="Enter Message"/>
+  <button class="send-button" id="btn">Send</button>
+</footer>

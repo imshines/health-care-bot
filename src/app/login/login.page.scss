@@ -1,0 +1,22 @@
+ion-content{
+    --background: linear-gradient(170deg, rgb(135, 228, 130) 0%, rgb(58, 238, 124) 100%);
+        // top: 0;
+}
+
+ion-toolbar, ion-navbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+
+.container {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.rounded{
+    border-radius: 50%;
+}

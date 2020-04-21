@@ -1,0 +1,15 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" class="rounded">
+    <h3>Login</h3>
+    <ion-item>
+      <ion-input placeholder="Enter Username or Email" class="ion-padding"></ion-input>
+    </ion-item>
+    <ion-item>  
+      <ion-input placeholder="Enter Password" type="password" class="ion-padding"></ion-input>
+    </ion-item>
+    <ion-button expand="block" class="ion-padding" [routerLink]="['/home']">Login</ion-button>
+    <p class="ion-padding-top">Create a new Account</p>
+    <ion-button size="small">Signup</ion-button>
+  </div>
+</ion-content>

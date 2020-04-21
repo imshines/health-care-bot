@@ -1,31 +1,97 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+*{
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: poppins;
 }
 
-#container a {
-  text-decoration: none;
+*:focus{
+  outline: none;
 }
 
-ion-content ion-toolbar {
-  --background: translucent;
+.head{
+  width: 100%;
+  height: 10vh;
+  background: #93e76c;
+  display: flex;
+  align-items: center;
 }
+
+.head h1{
+  margin: auto;
+  font-size: calc(14px * 2);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.chat-message{
+  margin-left: 10px;
+  padding-top: 10px;
+  display: flex;
+}
+
+.circle{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #000;
+}
+
+.messages{
+  height: 80vh;
+  background: rgb(250, 250, 250);
+}
+
+.message-text{
+  word-wrap: break-word;
+  margin-left: 20px;
+  background-color: rgb(214, 214, 214);
+  width: 70vw;
+  padding: 20px;
+  border-radius: 1rem;
+}
+
+.chat-message-reverse{
+  margin-right: 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.message-text-sender{
+  word-wrap: break-word;
+  margin-right: 20px;
+  background-color: #93e76c;
+  width: 70vw;
+  padding: 20px;
+  border-radius: 1rem;
+}
+
+.foot{
+  width: 100%;
+  height: 10vh;
+  background: #d6d6d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-input{
+  width: 85vw;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.send-button{
+  margin-left: 1vw;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #93e76c;
+  cursor: pointer;
+}
+
