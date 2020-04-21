@@ -10,20 +10,23 @@
 
   <hr>
 
-  <ion-item button (click)="buttonClick()" lines="none">
+  <ion-item button lines="none">
     <ion-label>
       My Data
     </ion-label>
+    <ion-icon slot="start" name="analytics-outline"></ion-icon>
   </ion-item>
-  <ion-item button (click)="buttonClick()" lines="none">
+  <ion-item button lines="none">
     <ion-label>
       Privacy Policy
     </ion-label>
+    <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
   </ion-item>
-  <ion-item button (click)="buttonClick()" lines="none" [routerLink]="['/login']">
+  <ion-item button lines="none" [routerLink]="['/login']">
     <ion-label>
       Logout 
     </ion-label>
+    <ion-icon slot="start" name="log-out-outline"></ion-icon>
   </ion-item>
 
   <hr>
