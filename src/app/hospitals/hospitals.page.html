@@ -8,11 +8,15 @@
 
 <ion-content>
 
-  <ion-button shape="round" fill="outline">
+  <ion-button shape="round" fill="outline" (click)="loadMap()">
     <ion-icon slot="start" name="locate"></ion-icon>
     Nearby
   </ion-button>
 
-  <div id="map"></div>
+  <div #map id="map"></div>
+
+  <div id="address">
+    <span>{{address}}</span>
+  </div>
 
 </ion-content>
