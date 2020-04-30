@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="text-center">
+      <img src="../../assets/icon/logo.png" alt="" width="120px">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="text-center">
+    <h3>Create your account!</h3>
+  </div>
+  <form #form="ngForm" (ngSubmit)="signUpUser(form)">
+    <div class="px-4">
+      <!-- <ion-item>
+        <ion-input placeholder="User Name" class="ion-padding"></ion-input>
+      </ion-item> -->
+      <ion-item>
+        <ion-input  name="email"  type="email" placeholder="Email" class="ion-padding" ngModel required></ion-input>
+      </ion-item>
+      <!-- <ion-item>
+        <ion-input name="number" placeholder="Age" class="ion-padding"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label class="text-black" >Gender</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="f">Female</ion-select-option>
+          <ion-select-option value="m">Male</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-input name="number" placeholder="Mobile Number" class="ion-padding"></ion-input>
+      </ion-item> -->
+      <ion-item>  
+        <ion-input name="password" placeholder="Password" type="password" class="ion-padding" ngModel required></ion-input>
+      </ion-item>
+      <!-- <ion-item>  
+        <ion-input name="confirm" placeholder="Confirm Password" type="password" class="ion-padding"></ion-input>
+      </ion-item> -->
+     <ion-button  type="submit" [disabled]="form.invalid" class="ion-padding"  >Signup</ion-button>
+    </div>    
+  </form>
+  
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <img src='../../assets/icon/logo.png' class="rounded">
+    <h3>Login</h3>
+
+    <form #form="ngForm" (ngSubmit)="loginUser(form)">
+      <ion-item>
+        <ion-input name="email"  type="email" placeholder="Enter Username or Email" class="ion-padding" ngModel required></ion-input>
+      </ion-item>
+      <ion-item>  
+        <ion-input placeholder="Enter Password"  name="password" type="password" class="ion-padding" ngModel required></ion-input>
+      </ion-item>
+   
+     <ion-button expand="block" type="submit" [disabled]="form.invalid" class="ion-padding" >Login</ion-button>
+    </form>
+    <p class="ion-padding-top">Create a new Account</p>
+    <ion-button size="small" (click)="goTosignUp()">Signup</ion-button>
+
+    <!-- class="ion-padding" -->
+    
+  </div>
+</ion-content>

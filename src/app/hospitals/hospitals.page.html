@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="text-center">
+      <img src="../../assets/icon/logo.png" alt="" width="120px">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button shape="round" fill="outline" (click)="loadMap()">
+    <ion-icon slot="start" name="locate"></ion-icon>
+    Nearby
+  </ion-button>
+
+  <div #map id="map"></div>
+
+  <div id="address">
+    <span>{{address}}</span>
+  </div>
+
+</ion-content>

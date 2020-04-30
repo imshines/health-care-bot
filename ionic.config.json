@@ -1,0 +1,8 @@
+{
+  "name": "healthcarebot-app",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
