@@ -26,13 +26,12 @@
 
 .messages {
   height: 80vh;
-  background: rgb(250, 250, 250);
 }
 
 .message-text {
   word-wrap: break-word;
   margin-left: 20px;
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(243, 243, 243);
   width: 70vw;
   padding: 20px;
   border-radius: 1rem;
@@ -48,7 +47,7 @@
 .message-text-sender {
   word-wrap: break-word;
   margin-right: 20px;
-  background-color: #93e76c;
+  background-color: #88ec95;
   width: 70vw;
   padding: 20px;
   border-radius: 1rem;
@@ -77,6 +76,4 @@
   width: 50px;
   border-radius: 50%;
   border: none;
-  background-color: #93e76c;
-  cursor: pointer;
 }
