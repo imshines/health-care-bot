@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="text-center">
+      <img src="../../assets/icon/logo.png" alt="" width="120px">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <hr>
+
+  <ion-item button lines="none">
+    <ion-label>
+      My Data
+    </ion-label>
+    <ion-icon slot="start" name="analytics-outline"></ion-icon>
+  </ion-item>
+  <ion-item button lines="none">
+    <ion-label>
+      Privacy Policy
+    </ion-label>
+    <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+  </ion-item>
+  <ion-item button lines="none" >
+    <ion-label>
+       <ion-button (click)="logOutUser()">Logout</ion-button>  
+    </ion-label>
+    <ion-icon slot="start" name="log-out-outline"></ion-icon>
+  </ion-item>
+
+  <hr>
+
+</ion-content>
