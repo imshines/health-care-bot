@@ -2,7 +2,6 @@
   <div class="container">
     <img src='../../assets/icon/logo.png' class="rounded">
     <h3>Login</h3>
-<<<<<<< HEAD
 
     <form #form="ngForm" (ngSubmit)="loginUser(form)">
       <ion-item>
@@ -12,23 +11,12 @@
         <ion-input placeholder="Enter Password"  name="password" type="password" class="ion-padding" ngModel required></ion-input>
       </ion-item>
    
-     <ion-button expand="block" type="submit" [disabled]="form.invalid" class="ion-padding" >Login</ion-button>
+     <ion-button expand="block" type="submit" class="ion-padding" >Login</ion-button>
     </form>
     <p class="ion-padding-top">Create a new Account</p>
     <ion-button size="small" (click)="goTosignUp()">Signup</ion-button>
 
     <!-- class="ion-padding" -->
     
-=======
-    <ion-item>
-      <ion-input placeholder="Enter Username or Email" class="ion-padding"></ion-input>
-    </ion-item>
-    <ion-item>  
-      <ion-input placeholder="Enter Password" type="password" class="ion-padding"></ion-input>
-    </ion-item>
-    <ion-button expand="block" class="ion-padding" [routerLink]="['/home']">Login</ion-button>
-    <p class="ion-padding-top">Create a new Account</p>
-    <ion-button size="small">Signup</ion-button>
->>>>>>> 71a8cd4605c2ef06b4d68542a1bb56587a97e07d
   </div>
 </ion-content>
